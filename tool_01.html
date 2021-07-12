@@ -1,7 +1,32 @@
-<html>
-    <body>
-        <div>
-            <a>あいうえお</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紛失確認画面</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="descriptionArea">
+            <p>返送されていないパーツはどれですか？</p>
         </div>
-    </body>
+        <div id="choices">
+            <label><input type="checkbox" name="returnParts" value="1">右イヤホン</label>
+            <label><input type="checkbox" name="returnParts" value="1">左イヤホン</label>
+            <label><input type="checkbox" name="returnParts" value="1">充電ケース</label>
+        </div>
+        <div>
+            <button id="btn01">OK</button>
+        </div>
+    </div>
+</body>
+<script>
+$("#btn01").click(function(){
+    alert("承知！");
+});
+
+
+</script>
 </html>
